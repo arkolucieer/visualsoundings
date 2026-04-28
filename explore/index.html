@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore the Oceans - V I S U A L  S O U N D I N G S</title>
+  <meta name="description" content="A pictorial exploration of the Earth&#x27;s surface beneath the waves.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text%3A400italic%2C600italic%7CJosefin+Sans%3A300%2C400%2C600%2C700%7CRaleway%3A300%2C400%2C600%2C700&subset=latin%2Clatin-ext">
+  <link rel="stylesheet" href="../assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="icon" href="../assets/media/cropped-FAVICON-520X520-2-32x32.png">
+</head>
+<body class="explore-page">
+
+<aside class="site-panel" data-navigation>
+  <a class="brand" href="../index.html">
+    <img src="../assets/media/VISUALSOUNDINGS-LOGO-300.gif" alt="V I S U A L  S O U N D I N G S" width="300" height="72">
+  </a>
+  <button class="panel-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li class="nav-group ">
+        <button type="button" aria-expanded="false">About</button>
+        <ul><li><a href="../about/introduction/index.html">Introduction</a></li>
+<li><a href="../about/seeing-with-sound/index.html">Seeing with Sound</a></li>
+<li><a href="../about/editors/index.html">About the editors</a></li>
+<li><a href="../about/other-art-science-projects/index.html">Other Art Science Projects</a></li>
+<li><a href="../about/acknowledgements/index.html">Acknowledgements</a></li></ul>
+      </li>
+      <li><a class="active" aria-current="page" href="index.html">Explore the Oceans</a></li>
+      <li class="nav-group ">
+        <button type="button" aria-expanded="false">Galleries</button>
+        <ul><li><a href="../galleries/composition/index.html">Composition</a></li>
+<li><a href="../galleries/moment/index.html">Moment</a></li>
+<li><a href="../galleries/wonder/index.html">Wonder</a></li>
+<li><a href="../galleries/pattern/index.html">Pattern</a></li>
+<li><a href="../galleries/all/index.html">All</a></li></ul>
+      </li>
+      <li><a href="../contact/index.html">Contact</a></li>
+    </ul>
+  </nav>
+</aside>
+<main class="site-main">
+
+<section class="page-header" aria-labelledby="page-title">
+  <h1 id="page-title">Explore the Oceans</h1>
+</section>
+<section class="map-stage" aria-label="Interactive image location map">
+  <div id="image-location-map" class="image-location-map">
+    <p>Loading image locations...</p>
+  </div>
+  <p class="map-caption">Select a marker to open the corresponding image page.</p>
+</section>
+</main>
+<script src="../assets/js/site.js" defer></script>
+
+<script>
+window.VISUAL_SOUNDINGS_MARKERS = [
+  {
+    "lat": 48.616667,
+    "lon": -2.583333,
+    "title": "Zebra Skin",
+    "detail": "Location: France",
+    "url": "../portfolio/zebra-skin/index.html"
+  },
+  {
+    "lat": 51.4,
+    "lon": 2.516667,
+    "title": "A Fire Under the Sea",
+    "detail": "Location: Belgium",
+    "url": "../portfolio/a-fire-under-the-sea/index.html"
+  },
+  {
+    "lat": -18.65,
+    "lon": 147.0,
+    "title": "Seascape Dreaming",
+    "detail": "Location: Australia",
+    "url": "../portfolio/seascape-dreaming/index.html"
+  },
+  {
+    "lat": 43.369119,
+    "lon": -2.583333,
+    "title": "A Childs Scribble",
+    "detail": "Location:Spain",
+    "url": "../portfolio/a-childs-scribble/index.html"
+  },
+  {
+    "lat": -17.488611111111112,
+    "lon": 122.1413888888889,
+    "title": "Constellations of the Browse Basin",
+    "detail": "Location:Australia",
+    "url": "../portfolio/constellations-of-the-browse-basin/index.html"
+  },
+  {
+    "lat": -52.968,
+    "lon": 73.565,
+    "title": "Celebrate!",
+    "detail": "Location:Southern Ocean",
+    "url": "../portfolio/celebrate/index.html"
+  },
+  {
+    "lat": 43.3594,
+    "lon": -1.9051333,
+    "title": "Donuts",
+    "detail": "Location:Spain",
+    "url": "../portfolio/donuts-2/index.html"
+  },
+  {
+    "lat": -53.095,
+    "lon": 72.633,
+    "title": "Dune",
+    "detail": "Location",
+    "url": "../portfolio/dune/index.html"
+  },
+  {
+    "lat": -52.979,
+    "lon": 72.077,
+    "title": "Dwarf Guyots",
+    "detail": "Location:Southern Ocean",
+    "url": "../portfolio/dwarf-guyots/index.html"
+  },
+  {
+    "lat": 71.413,
+    "lon": 17.737,
+    "title": "Ice etching",
+    "detail": "Location:Norway",
+    "url": "../portfolio/ice-etching/index.html"
+  },
+  {
+    "lat": -34.032777777777774,
+    "lon": 151.22916666666666,
+    "title": "In Conversation",
+    "detail": "Location:Australia",
+    "url": "../portfolio/in-conversation/index.html"
+  },
+  {
+    "lat": -53.051,
+    "lon": 72.544,
+    "title": "Lava brain",
+    "detail": "Location:Southern Ocean",
+    "url": "../portfolio/lava-brain/index.html"
+  },
+  {
+    "lat": 55.238611,
+    "lon": -6.708611,
+    "title": "Leaf",
+    "detail": "Location:Ireland",
+    "url": "../portfolio/leaf/index.html"
+  },
+  {
+    "lat": 35.983333333333334,
+    "lon": 14.441666666666666,
+    "title": "Maltese Tattoo",
+    "detail": "Location:Malta",
+    "url": "../portfolio/maltese-tattoo/index.html"
+  },
+  {
+    "lat": 51.463611,
+    "lon": -9.229444,
+    "title": "MV Kowloon Bridge",
+    "detail": "Location:Ireland",
+    "url": "../portfolio/mv-kowloon-bridge/index.html"
+  },
+  {
+    "lat": 72.265,
+    "lon": 34.265,
+    "title": "Oceans Nine",
+    "detail": "Location:Norway",
+    "url": "../portfolio/oceans-nine/index.html"
+  },
+  {
+    "lat": -18.69638888888889,
+    "lon": 146.5388888888889,
+    "title": "Palm Island Spine",
+    "detail": "Location:Australia",
+    "url": "../portfolio/palm-island-spine/index.html"
+  },
+  {
+    "lat": 48.785833,
+    "lon": -3.915,
+    "title": "Pancake Facies",
+    "detail": "Location:France",
+    "url": "../portfolio/pancake-facies/index.html"
+  },
+  {
+    "lat": 43.465602,
+    "lon": -2.529351,
+    "title": "Plastic Rocks",
+    "detail": "Location:Spain",
+    "url": "../portfolio/plastic_rocks-2/index.html"
+  },
+  {
+    "lat": 55.269444,
+    "lon": -6.616667,
+    "title": "Sediment on the move",
+    "detail": "Location:Ireland",
+    "url": "../portfolio/sediment-on-the-move/index.html"
+  },
+  {
+    "lat": 64.9961111111111,
+    "lon": 9.25611111111111,
+    "title": "The Bird’s Head",
+    "detail": "Location:Norway",
+    "url": "../portfolio/birds-head/index.html"
+  },
+  {
+    "lat": 52.63417,
+    "lon": -9.825833,
+    "title": "The Eye of Medusa",
+    "detail": "Loation:Ireland",
+    "url": "../portfolio/the-eye-of-medusa/index.html"
+  },
+  {
+    "lat": 43.4275,
+    "lon": -2.965556,
+    "title": "Underwater River",
+    "detail": "Location:Spain",
+    "url": "../portfolio/underwater-river/index.html"
+  },
+  {
+    "lat": 75.234,
+    "lon": 19.65,
+    "title": "Slugs and Snails",
+    "detail": "Location:Norway",
+    "url": "../portfolio/slugs-and-snails/index.html"
+  },
+  {
+    "lat": -40.8525,
+    "lon": 174.91,
+    "title": "Kapiti Moko",
+    "detail": "Location:New Zealand",
+    "url": "../portfolio/kapiti-moko/index.html"
+  }
+];
+window.VISUAL_SOUNDINGS_WORLD = "../assets/vendor/leaflet/countries.geojson";
+</script>
+<script src="../assets/vendor/leaflet/leaflet.js" defer></script>
+<script src="../assets/js/map.js" defer></script>
+</body>
+</html>
