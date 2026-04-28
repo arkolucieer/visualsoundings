@@ -192,6 +192,8 @@ h3 {
 }
 
 .content.narrow {
+  margin-left: auto;
+  margin-right: auto;
   max-width: calc(var(--measure) + min(16vw, 164px));
 }
 
@@ -224,6 +226,16 @@ h3 {
   font-size: 19px;
   font-weight: 700;
   margin: 28px 0 18px;
+}
+
+.gallery-description {
+  padding-bottom: 10px;
+}
+
+.gallery-subtitle {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .social-links {
@@ -353,7 +365,14 @@ h3 {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
   padding: 58px min(8vw, 82px) 80px;
+}
+
+.gallery-description + .gallery-grid {
+  padding-top: 28px;
 }
 
 .image-card {
@@ -366,6 +385,12 @@ h3 {
   display: block;
 }
 
+.card-media {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
 .image-card img {
   aspect-ratio: 4 / 3;
   display: block;
@@ -374,17 +399,45 @@ h3 {
   width: 100%;
 }
 
-.image-card div {
-  padding: 18px;
+.card-overlay {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.76);
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  padding: 24px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transition: opacity 280ms ease;
 }
 
-.image-card h2 {
-  font-size: 17px;
-  line-height: 1.35;
-  margin: 0;
+.image-card a:hover .card-overlay,
+.image-card a:focus-visible .card-overlay {
+  opacity: 1;
 }
 
-.card-meta,
+.card-overlay-title {
+  color: #fff;
+  font-family: var(--brand-font);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.card-overlay-category {
+  color: var(--accent-soft);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .eyebrow,
 .map-caption {
   color: var(--muted);
@@ -399,6 +452,9 @@ h3 {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1120px;
   padding: 58px min(8vw, 82px) 80px;
 }
 
@@ -409,6 +465,9 @@ h3 {
 }
 
 .portfolio-page-inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1204px;
   padding: 58px min(8vw, 82px) 80px;
 }
 
@@ -467,6 +526,9 @@ h3 {
 }
 
 .map-stage {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1264px;
   padding: 44px min(8vw, 82px) 80px;
 }
 
